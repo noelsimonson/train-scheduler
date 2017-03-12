@@ -26,24 +26,24 @@
     <!--firebase-->
     <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
   </head>
+
+
   <body>
+    
     <div class="container">
 
     <!--page title -->
       <div class="jumbotron">
         <div <i class="fa fa-subway fa-5x"></i>
         </div>
-        <h1> Trian Schedule </h1>
+        <h1> Trian Schedules </h1>
        </div>
 
     <!-- train panel with results -->
@@ -72,48 +72,40 @@
     <!--form panel-->
     <div class="panel panel-warning">
       <div class="panel-heading text-center>">
-        <h3> Add Train </h3>
+        <h3> Add Train </h3></div>
 
-     <form>
+     <form class="panel-body">
 
-  <div class="form-group">
-    <label for="formGroupExampleInput"> Train Name</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  <div class="form-group" id="form">
+    <label for="trainName"> Train Name</label>
+    <input type="text" class="form-control" id="trainName" placeholder="Enter name here">
   </div>
 
   <div class="form-group">
-    <label for="formGroupExampleInput2"> Destination</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    <label for="destination"> Destination</label>
+    <input type="text" class="form-control" id="destination" placeholder="Enter destination here">
     </div>
 
     <div class="form-group">
-    <label for="formGroupExampleInput"> First Train Time</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <label for="firstTrainTime">First Train Time</label>
+    <input type="text" class="form-control" id="firstTrainTime" placeholder="Enter first train time here">
   </div>
 
   <div class="form-group">
-    <label for="formGroupExampleInput2"> Frequency (min) </label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    <label for="frequency"> Frequency (min) </label>
+    <input type="text" class="form-control" id="frequency" placeholder="Enter frequency here">
   </div>
+  <input type="submit" class="btn btn-info" id="submit" value ="Submit">
 
 </form>
 </div>
 
-
-
-
-
-
-
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- train js file -->
-    <script type="text/javascript" src = "assets/javascript/app.js"></script>
+    <script type="text/javascript" src = "assets/javascript/script.js"></script>
     </div>
   </body>
 </html>
